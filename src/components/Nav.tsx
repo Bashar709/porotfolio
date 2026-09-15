@@ -4,7 +4,6 @@ import ThemeToggle from './ThemeToggle'
 const links = [
   { id: 'hjem', label: 'Hjem', icon: '🏠' },
   { id: 'om-meg', label: 'Om meg', icon: '👤' },
-  { id: 'erfaring', label: 'Erfaring', icon: '🧭' },
   { id: 'prosjekter', label: 'Prosjekter', icon: '💼' },
 ]
 
