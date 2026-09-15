@@ -4,8 +4,6 @@ const skills = [
   { title: 'Backend', items: 'Java, Spring Boot, REST-API, Programvarearkitektur' },
   { title: 'Frontend', items: 'HTML5, CSS, JavaScript, TypeScript, React' },
   { title: 'Database', items: 'SQL, Datamodellering' },
-  { title: 'Universell utforming', items: 'Tilgjengeleg og brukarvenleg design' },
-  { title: 'Personlege eigenskapar', items: 'Kundebehandling, teamarbeid, brukarstøtte' },
 ]
 
 export default function About() {
