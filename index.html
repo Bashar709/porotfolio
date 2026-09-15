@@ -15,6 +15,13 @@
       content="Portfolio til Bashar Mohamad — Bachelorstudent i informasjonsteknologi ved Høgskulen på Vestlandet."
     />
     <meta property="og:type" content="website" />
+    <script>
+      (function () {
+        var isLight = localStorage.getItem('theme') === 'light';
+        document.documentElement.classList.toggle('light', isLight);
+        document.documentElement.classList.toggle('dark', !isLight);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

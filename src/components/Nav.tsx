@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 const links = [
   { id: 'hjem', label: 'Hjem', icon: '🏠' },
   { id: 'om-meg', label: 'Om meg', icon: '👤' },
+  { id: 'erfaring', label: 'Erfaring', icon: '🧭' },
   { id: 'prosjekter', label: 'Prosjekter', icon: '💼' },
 ]
 
@@ -29,7 +31,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className="sticky top-4 z-50 mx-auto mt-8 w-fit rounded-full border border-white/10 bg-white/5 px-2 py-1.5 shadow-lg backdrop-blur-md">
+    <nav className="sticky top-4 z-50 mx-auto mt-8 flex w-fit items-center rounded-full border border-line bg-panel/60 px-2 py-1.5 shadow-lg backdrop-blur-md">
       <button
         type="button"
         aria-label="Slå av/på meny"
@@ -65,6 +67,7 @@ export default function Nav() {
           </li>
         ))}
       </ul>
+      <ThemeToggle />
     </nav>
   )
 }

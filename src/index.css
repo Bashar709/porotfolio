@@ -1,11 +1,25 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-bg: #0d1117;
   --color-panel: #161b22;
   --color-accent: #58a6ff;
   --color-muted: #8b949e;
   --color-line: #30363d;
+  --color-text: #c9d1d9;
+  --color-text-strong: #ffffff;
+}
+
+:root:not(.dark) {
+  --color-bg: #ffffff;
+  --color-panel: #f6f8fa;
+  --color-accent: #2563eb;
+  --color-muted: #57606a;
+  --color-line: #d0d7de;
+  --color-text: #24292f;
+  --color-text-strong: #0d1117;
 }
 
 html {
@@ -15,9 +29,36 @@ html {
 body {
   margin: 0;
   background-color: var(--color-bg);
-  color: #c9d1d9;
+  color: var(--color-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 ::selection {
   background-color: rgba(88, 166, 255, 0.3);
+}
+
+@keyframes blob-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(6vw, 4vh) scale(1.1); }
+  66% { transform: translate(-4vw, 6vh) scale(0.95); }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-6vw, -3vh) scale(0.9); }
+  66% { transform: translate(4vw, -5vh) scale(1.08); }
+}
+
+.blob-1 {
+  animation: blob-float-1 22s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation: blob-float-2 26s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-1, .blob-2 {
+    animation: none;
+  }
 }
