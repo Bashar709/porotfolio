@@ -1,7 +1,7 @@
 import Reveal from './Reveal'
 
 const skills = [
-  { title: 'Backend', items: 'Java, Spring Boot, REST-API, Programvarearkitektur' },
+  { title: 'Backend', items: 'Java, C++, C#, Spring Boot, REST-API, Programvarearkitektur' },
   { title: 'Frontend', items: 'HTML5, CSS, JavaScript, TypeScript, React' },
   { title: 'Database', items: 'SQL, Datamodellering' },
 ]
@@ -17,12 +17,8 @@ export default function About() {
           Om meg
         </h2>
         <p className="mx-auto mt-5 max-w-xl leading-relaxed text-muted">
-          Student på bachelorstudiet i informasjonsteknologi ved Høgskulen på
-          Vestlandet, med spesialisering i programvareutvikling. Sterkast i
-          Java, med erfaring frå både frontend og backend av webapplikasjonar
-          og SQL-databasar. Praktisk erfaring som teknisk vakt ved digital
-          eksamen, studentassistent i programmering, og frå kundeservice i
-          butikk.
+          Sterkast i Java, med erfaring frå både frontend og backend av
+          webapplikasjonar og SQL-databasar.
         </p>
 
         <div className="mt-7 rounded-xl border border-line bg-panel/50 p-5">

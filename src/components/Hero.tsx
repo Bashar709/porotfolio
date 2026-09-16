@@ -32,12 +32,8 @@ export default function Hero() {
           Bashar Mohamad
         </h1>
         <p className="mt-2 text-muted">
-          Bachelorstudent i informasjonsteknologi · Høgskulen på Vestlandet ·
-          ferdig vår 2027
-        </p>
-        <p className="mx-auto mt-6 max-w-xl leading-relaxed text-muted">
-          Sterkast i Java, med erfaring frå både frontend og backend av
-          webapplikasjonar og SQL-databasar.
+          Bachelorstudent i informasjonsteknologi · Høgskulen på Vestlandet,
+          med spesialisering i programvareutvikling | ferdig vår 2027
         </p>
 
         <div className="mt-6 flex justify-center gap-3">
