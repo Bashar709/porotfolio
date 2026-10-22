@@ -34,16 +34,16 @@ export default function TerminalIntro() {
   }, [])
 
   return (
-    <div className="mx-auto mb-6 w-full max-w-sm rounded-lg border border-line bg-[#010409]/80 p-4 text-left font-mono text-sm shadow-lg">
+    <div className="mx-auto mb-6 w-full max-w-sm rounded-lg border border-line bg-[#0e0d0b]/85 p-4 text-left font-mono text-sm shadow-lg">
       <div className="mb-2 flex gap-1.5">
         <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
       </div>
       <p className="text-[#8b949e]">
-        <span className="text-[#58a6ff]">$</span> {typedCommand}
+        <span className="text-accent">$</span> {typedCommand}
         {!typedOutput && showCursor && (
-          <span className="text-[#58a6ff]">▌</span>
+          <span className="text-accent">▌</span>
         )}
       </p>
       {typedOutput && (
